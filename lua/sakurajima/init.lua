@@ -1,25 +1,4 @@
---              _                           _  _
---             | |                         (_)(_)
---  ___   __ _ | | __ _   _  _ __   __ _    _  _  _ __ ___    __ _
--- / __| / _` || |/ /| | | || '__| / _` |  | || || '_ ` _ \  / _` |
--- \__ \| (_| ||   < | |_| || |   | (_| |  | || || | | | | || (_| |
--- |___/ \__,_||_|\_\ \__,_||_|    \__,_|  | ||_||_| |_| |_| \__,_|
---                                        _/ |
---                                       |__/
---
--- Sakurajima is the name of a mountain representing Kagoshima Prefecture in Japan.
-
--- File: salurajima.lua
-
--- Description: A colour scheme for Neovim
-
--- Scheme: sakurajima
--- Maintainer: Daiki Nakashima < d a i k i 4 8 . e n g i n e e r [at] g m a i l . c o m >
-
--- Version: v0.1.0
--- Date: 29 May 2024
--- UpdateDate: 29 May 2024
--- ------------------------------------------------------------------------------
+local highlight = require("sakurajima.highlight")
 
 local M = {}
 
@@ -37,21 +16,21 @@ function M.setup()
 
 	vim.g.colors_name = 'sakurajima'
 
-	-- ------------------------------------------------------------------------------
-
 	if not vim.fn.has('nvim') then
 		vim.o.cursorline = true
 		vim.o.cursorlineopt = 'number'
 	end
 
-	local highlight = function(group, opts)
-		local guifg = opts.fg or 'NONE'
-		local guibg = opts.bg or 'NONE'
-		local gui = opts.gui or 'NONE'
-		local guisp = opts.sp or 'NONE'
-		local command = string.format('highlight %s guifg=%s guibg=%s gui=%s guisp=%s', group, guifg, guibg, gui, guisp)
-		vim.cmd(command)
-	end
+	-- ------------------------------------------------------------------------------
+
+	-- local highlight = function(group, opts)
+	-- 	local guifg = opts.fg or 'NONE'
+	-- 	local guibg = opts.bg or 'NONE'
+	-- 	local gui = opts.gui or 'NONE'
+	-- 	local guisp = opts.sp or 'NONE'
+	-- 	local command = string.format('highlight %s guifg=%s guibg=%s gui=%s guisp=%s', group, guifg, guibg, gui, guisp)
+	-- 	vim.cmd(command)
+	-- end
 
 	highlight('Normal', {fg='#8b9aaa', bg='#081421'})
 	highlight('Visual', {fg='#0e1219', bg='#6d5279'})
