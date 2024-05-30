@@ -10,7 +10,7 @@
 --
 -- Sakurajima is the name of a mountain representing Kagoshima Prefecture in Japan.
 
--- File: salurajima.lua
+-- File: sakurajima.lua
 
 -- Description: A colour scheme for Neovim
 
