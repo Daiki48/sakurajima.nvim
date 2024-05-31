@@ -2,6 +2,16 @@
 
 I love Sakurajima.  
 
+Sakurajima is the name of a active volcano in Kagoshima Prefecture, Japan.  
+Sakurajima erupts almost daily :boom:  
+
+This color scheme was created using Sakurajima as a motif.  
+This is the background color with ash added to dark mode.
+And the main color scheme is warm, reminiscent of magma.  
+This is entirely a matter of my preference.
+
+If you like this color scheme, please use it.
+
 ## Images
 
 ### For example, dashboard highlight
