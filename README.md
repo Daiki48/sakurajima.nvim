@@ -2,17 +2,18 @@
 
 ![sakurajima-icon](https://github.com/Daiki48/sakurajima.nvim/assets/102207294/33ea8f33-4495-4332-8c17-3695fbc30165.png)
 
-I love Sakurajima.  
-
 Sakurajima is the name of a active volcano in Kagoshima Prefecture, Japan.  
 Sakurajima erupts almost daily :boom:  
+
+The theme of this color schema is the volcanic ash and magma of Sakurajima.
 
 This color scheme was created using Sakurajima as a motif.  
 This is the background color with ash added to dark mode.
 And the main color scheme is warm, reminiscent of magma.  
 This is entirely a matter of my preference.
 
-If you like this color scheme, please use it.
+If you like this color scheme, please use it.  
+I love Sakurajima.  
 
 ## Images
 
@@ -30,6 +31,8 @@ If you like this color scheme, please use it.
 
 ## Usage
 
+### [lazy.nvim](https://github.com/folke/lazy.nvim)
+
 ```lua
 {
     "Daiki48/sakurajima.nvim",
@@ -43,7 +46,19 @@ If you like this color scheme, please use it.
 
 ## Support
 
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+### [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+```lua
+require("lualine").setup({
+    options = {
+        theme = "sakurajima"
+    }
+})
+```
+
+## Reference
+
+[my dotfiles](https://github.com/Daiki48/dotfiles/blob/main/.config/nvim/)
 
 ## LISENCE
 
