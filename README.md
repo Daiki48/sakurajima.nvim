@@ -1,5 +1,7 @@
 # sakurajima.nvim
 
+![sakurajima-icon](https://github.com/Daiki48/sakurajima.nvim/assets/102207294/33ea8f33-4495-4332-8c17-3695fbc30165.png)
+
 I love Sakurajima.  
 
 Sakurajima is the name of a active volcano in Kagoshima Prefecture, Japan.  
