@@ -1,6 +1,7 @@
 local colors = require("sakurajima.colors")
 local highlight = require("sakurajima.highlight")
 local hop = require("sakurajima.plugins.hop")
+local telescope = require("sakurajima.plugins.telescope")
 
 local M = {}
 
@@ -105,20 +106,8 @@ function M.setup()
 	vim.cmd("highlight link DiagnosticFloatingHint DiagnosticHint")
 	vim.cmd("highlight link DiagnosticSignHint DiagnosticHint")
 
-	highlight.setup("TelescopeSelection", { fg = colors.dark_white, bg = colors.winter_gray })
-	highlight.setup("TelescopeMultiIcon", { fg = "#0e1faf" })
-	vim.cmd("highlight link TelescopePreviewDate TelescopeMultiIcon")
-	highlight.setup("TelescopePreviewSize", { fg = "#8f9f1f" })
-
-	-- highlight.setup("DduUiFfFilterMatch", { fg = "#8f9f1f", bg = "cleared" })
-	-- highlight.setup("DduUiFfFloating", { fg = "cleared", bg = "#0e1219" })
-	-- highlight.setup("DduUiFfPrompt", { fg = "#5AFF19", bg = "cleared" })
-	-- highlight.setup("DduUiFfSelected", { fg = "#E49653", bg = "#E481ff" })
-	--
-	-- highlight.setup("DduUiFilerFloating", { fg = "cleared", bg = "#0e143f" })
-	-- highlight.setup("DduUiFilerSelected", { fg = "#E49653", bg = "#E481ff" })
-
 	hop.setup()
+	telescope.setup()
 
 end
 
