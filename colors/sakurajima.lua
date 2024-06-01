@@ -43,9 +43,9 @@
 -- Scheme: sakurajima
 -- Maintainer: Daiki Nakashima < d a i k i 4 8 . e n g i n e e r [at] g m a i l . c o m >
 --
--- Version: v0.1.0
+-- Version: v0.2.0
 -- Date: 29 May 2024
--- UpdateDate: 31 May 2024
+-- UpdateDate: 1 June 2024
 -- ---------------------------------------------------------------------------------------------
 
 require("sakurajima").setup()

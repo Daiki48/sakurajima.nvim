@@ -29,6 +29,16 @@ I love Sakurajima.
 
 ![sakurajima-coc](https://github.com/Daiki48/sakurajima.nvim/assets/102207294/371aeae0-7d69-4dad-935b-bd3a6db589fc.png)
 
+### For example, hop.nvim
+
+![sakurajima-hop](https://github.com/Daiki48/sakurajima.nvim/assets/102207294/7ec2c284-b90b-4898-bd41-d83aa413b754.png)
+
+### For example, find files in telescope.nvim
+
+![sakurajima-telescope-ff](https://github.com/Daiki48/sakurajima.nvim/assets/102207294/8dd1cd15-d728-4005-8b14-8b22f108c631.png)
+
+[See more...](https://github.com/Daiki48/sakurajima.nvim/tree/main/screenshots)
+
 ## Usage
 
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)

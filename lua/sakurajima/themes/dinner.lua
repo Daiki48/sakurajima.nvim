@@ -1,5 +1,7 @@
 local colors = require("sakurajima.colors")
 local highlight = require("sakurajima.highlight")
+local hop = require("sakurajima.plugins.hop")
+local telescope = require("sakurajima.plugins.telescope")
 
 local M = {}
 
@@ -38,7 +40,7 @@ function M.setup()
 	highlight.setup("MatchParen", { fg = colors.black, bg = colors.cyan })
 	highlight.setup("DiffText", { fg = colors.dark_white, bg = colors.black })
 	highlight.setup("DiffAdd", { fg = colors.green, bg = colors.black })
-	highlight.setup("DiffDelete", { fg = colors.red, bg = colors.black })
+	highlight.setup("DiffDelete", { fg = colors.dark_red, bg = colors.black })
 	highlight.setup("DiffChange", { fg = colors.yellow, bg = colors.black })
 	highlight.setup("SpecialKey", { fg = colors.dark_red })
 	highlight.setup("Special", { fg = colors.dark_yellow_green })
@@ -47,6 +49,9 @@ function M.setup()
 	highlight.setup("Boolean", { fg = colors.cyan })
 	highlight.setup("@valiable", { fg = colors.dark_white })
 	highlight.setup("QuickFixLine", { fg = colors.dark_cyan })
+	highlight.setup("Added", { fg = colors.green })
+	highlight.setup("Changed", { fg = colors.yellow })
+	highlight.setup("Removed", { fg = colors.dark_red })
 
 	vim.cmd("highlight link TabLine Function")
 	vim.cmd("highlight link Boolean Constant")
@@ -101,18 +106,9 @@ function M.setup()
 	vim.cmd("highlight link DiagnosticFloatingHint DiagnosticHint")
 	vim.cmd("highlight link DiagnosticSignHint DiagnosticHint")
 
-	highlight.setup("TelescopeSelection", { fg = colors.dark_white, bg = colors.winter_gray })
-	highlight.setup("TelescopeMultiIcon", { fg = "#0e1faf" })
-	vim.cmd("highlight link TelescopePreviewDate TelescopeMultiIcon")
-	highlight.setup("TelescopePreviewSize", { fg = "#8f9f1f" })
+	hop.setup()
+	telescope.setup()
 
-	highlight.setup("DduUiFfFilterMatch", { fg = "#8f9f1f", bg = "cleared" })
-	highlight.setup("DduUiFfFloating", { fg = "cleared", bg = "#0e1219" })
-	highlight.setup("DduUiFfPrompt", { fg = "#5AFF19", bg = "cleared" })
-	highlight.setup("DduUiFfSelected", { fg = "#E49653", bg = "#E481ff" })
-
-	highlight.setup("DduUiFilerFloating", { fg = "cleared", bg = "#0e143f" })
-	highlight.setup("DduUiFilerSelected", { fg = "#E49653", bg = "#E481ff" })
 end
 
 return M

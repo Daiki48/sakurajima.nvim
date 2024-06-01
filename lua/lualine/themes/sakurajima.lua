@@ -17,7 +17,7 @@ return {
 		c = { bg = colors.winter_gray, fg = colors.light_gray },
 	},
 	replace = {
-		a = { bg = colors.red, fg = colors.black, gui = "bold" },
+		a = { bg = colors.dark_red, fg = colors.black, gui = "bold" },
 		b = { bg = colors.winter_gray, fg = colors.light_gray },
 		c = { bg = colors.winter_gray, fg = colors.light_gray },
 	},
