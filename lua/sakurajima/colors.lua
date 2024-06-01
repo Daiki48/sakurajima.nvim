@@ -32,6 +32,7 @@ colors.blue = "#8395A5"
 colors.dark_blue = "#4F6981"
 colors.light_blue = "#82ade0"
 
+colors.red = "#E34C36"
 colors.dark_red = "#A77169"
 
 colors.orange = "#E38D2C"
