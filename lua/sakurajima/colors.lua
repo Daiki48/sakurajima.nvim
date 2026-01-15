@@ -8,11 +8,6 @@ colors.warn = "#C7A252"
 colors.info = "#CEB4A8"
 colors.hint = "#717375"
 
--- style
-colors.bold = "bold"
-colors.underline = "underline"
-colors.undercurl = "undercurl"
-
 -- Using color
 colors.black = "#22272e"
 colors.black_blue = "#1D3A64"

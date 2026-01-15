@@ -1,12 +1,19 @@
 local highlight = {}
 
+-- ハイライトグループを設定
 function highlight.setup(group, opts)
-	local guifg = opts.fg or "NONE"
-	local guibg = opts.bg or "NONE"
-	local gui = opts.gui or "NONE"
-	local guisp = opts.sp or "NONE"
-	local command = string.format("highlight %s guifg=%s guibg=%s gui=%s guisp=%s", group, guifg, guibg, gui, guisp)
-	vim.cmd(command)
+	local hl_opts = {}
+	for k, v in pairs(opts) do
+		if v ~= nil and v ~= "NONE" and v ~= "cleared" then
+			hl_opts[k] = v
+		end
+	end
+	vim.api.nvim_set_hl(0, group, hl_opts)
+end
+
+-- ハイライトグループをリンク
+function highlight.link(from, to)
+	vim.api.nvim_set_hl(0, from, { link = to })
 end
 
 return highlight
